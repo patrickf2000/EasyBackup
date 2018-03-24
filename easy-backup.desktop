@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=EasyBackup
+Comment=A simple, efficient backup program.
+Icon=view-refresh
+Exec=EasyBackup
+Terminal=false
+Categories=Application;System;Settings

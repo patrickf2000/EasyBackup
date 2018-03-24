@@ -1,0 +1,5 @@
+/build
+/winbin
+*.user
+/.DS_Store
+src/.DS_Store

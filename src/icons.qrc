@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/folder-new.png</file>
+        <file>icons/edit-delete.png</file>
+        <file>icons/view-refresh.png</file>
+    </qresource>
+</RCC>
