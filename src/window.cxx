@@ -28,12 +28,13 @@
 #include <QPixmap>
 
 #include "window.hh"
+#include "lang.hh"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
       tabs(new TabWidget)
 {
-    this->setWindowTitle("EasyBackup");
+    this->setWindowTitle(_("EasyBackup"));
     this->setWindowIcon(QIcon::fromTheme("view-refresh",QPixmap(":/icons/view-refresh.png")));
     this->setFixedSize(700,500);
 

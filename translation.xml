@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translation>
+	<codes>
+		<li name="English,en,en_US,en_US.utf8" id="en"/>
+		<li name="debug" id="debug"/>
+	</codes>
+	<trans>
+		<phrase id="EasyBackup">
+			<en>EasyBackup</en>
+			<debug>EasyBackup_db</debug>
+		</phrase>
+	</trans>
+</translation>

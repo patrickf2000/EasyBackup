@@ -22,6 +22,7 @@ endif()
 target_link_libraries(EasyBackup
 	Qt5::Core
 	Qt5::Widgets
+	trans
 )
 
 if (UNIX)

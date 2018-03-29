@@ -25,12 +25,31 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 // EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <QApplication>
+#include <string>
+#include <trans/locale.hh>
 
 #include "window.hh"
 #include "settings.hh"
 #include "backup.hh"
 
 int main(int argc, char *argv[]) {
+	std::string path = "/usr/share/EasyBackup/translations.xml";
+	std::string lang = "LANG";
+	
+	if (argc>1) {
+		for (int i = 0; i<argc; i++) {
+			if (std::string(argv[i])=="--trans") {
+				path = std::string(argv[i+1]);
+			} else if (std::string(argv[i])=="--lang") {
+				lang = std::string(argv[i+1]);
+			}
+		}
+	}
+	
+	Locale::init(lang);
+	Locale::setFile(path);
+	Locale::load();
+
     QApplication a(argc, argv);
 
     Settings::init();

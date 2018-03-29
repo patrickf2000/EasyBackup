@@ -9,6 +9,8 @@ find_package(Qt5 REQUIRED COMPONENTS
 	Widgets
 )
 
+find_library(trans REQUIRED)
+
 add_compile_options(-std=c++11)
 
 add_subdirectory(src)
