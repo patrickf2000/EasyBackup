@@ -26,6 +26,7 @@
 // EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <QScrollBar>
 #include <QDir>
+#include <QMessageBox>
 
 #include "backup_page.hh"
 #include "settings.hh"
@@ -90,4 +91,10 @@ void BackupPage::onDone() {
     oldText += t("backup_done");
     output->setPlainText(oldText);
     output->verticalScrollBar()->setValue(output->verticalScrollBar()->maximum());
+
+    QMessageBox msg;
+    msg.setWindowTitle(t("Backup Done"));
+    msg.setText(t("backup_done"));
+    msg.setIcon(QMessageBox::Information);
+    msg.exec();
 }
