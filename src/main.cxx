@@ -33,7 +33,7 @@
 #include "backup.hh"
 
 int main(int argc, char *argv[]) {
-	std::string path = "/usr/share/EasyBackup/translations.xml";
+	std::string path = "/usr/share/EasyBackup/translation.xml";
 	std::string lang = "LANG";
 	
 	if (argc>1) {
