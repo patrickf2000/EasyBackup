@@ -10,6 +10,7 @@ set(SRC
 	tabwidget.cxx
 	tinyxml2.cpp
 	window.cxx
+	lang.cxx
 	icons.qrc
 )
 

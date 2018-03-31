@@ -33,6 +33,7 @@
 #include "configure_page.hh"
 #include "settings.hh"
 #include "backup.hh"
+#include "lang.hh"
 
 ConfigurePage::ConfigurePage()
     : layout(new QVBoxLayout),
@@ -42,10 +43,10 @@ ConfigurePage::ConfigurePage()
       listWidget(new QListWidget),
       destWidget(new QWidget),
       destLayout(new QHBoxLayout),
-      destLabel(new QLabel("Destination")),
+      destLabel(new QLabel(t("Destination"))),
       destLocation(new QLineEdit),
-      destBrowse(new QPushButton("Browse")),
-      save(new QPushButton("Save Settings"))
+      destBrowse(new QPushButton(t("Browse"))),
+      save(new QPushButton(t("Save Settings")))
 {
     layout->setContentsMargins(0,0,0,0);
     this->setLayout(layout);
@@ -93,7 +94,7 @@ void ConfigurePage::load() {
 QString ConfigurePage::chooseFolder() {
     QString path = "";
     QFileDialog dialog;
-    dialog.setWindowTitle("Choose Folder");
+    dialog.setWindowTitle(t("Choose Folder"));
     dialog.setAcceptMode(QFileDialog::AcceptOpen);
     dialog.setFileMode(QFileDialog::DirectoryOnly);
     dialog.setDirectory(QDir::homePath());
@@ -138,8 +139,8 @@ void ConfigurePage::onSaveClicked() {
     Backup::setBackupList(items);
 
     QMessageBox msg;
-    msg.setWindowTitle("Information");
-    msg.setText("Your settings have been saved.");
+    msg.setWindowTitle(t("Information"));
+    msg.setText(t("settings_saved"));
     msg.setIcon(QMessageBox::Information);
     msg.exec();
 }

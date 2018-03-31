@@ -27,6 +27,7 @@
 #include "tabwidget.hh"
 #include "backup_page.hh"
 #include "configure_page.hh"
+#include "lang.hh"
 
 TabWidget::TabWidget()
     : layout(new QVBoxLayout),
@@ -35,8 +36,8 @@ TabWidget::TabWidget()
     layout->setContentsMargins(0,0,0,0);
     this->setLayout(layout);
 
-    tabs->addTab(new BackupPage(),"Backup");
-    tabs->addTab(new ConfigurePage(),"Configure");
+    tabs->addTab(new BackupPage(),t("Backup"));
+    tabs->addTab(new ConfigurePage(),t("Configure"));
     layout->addWidget(tabs);
 }
 

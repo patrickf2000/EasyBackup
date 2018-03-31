@@ -24,23 +24,10 @@
 // WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 // EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#include <QIcon>
-#include <QPixmap>
-
-#include "window.hh"
 #include "lang.hh"
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent),
-      tabs(new TabWidget)
-{
-    this->setWindowTitle(t("EasyBackup"));
-    this->setWindowIcon(QIcon::fromTheme("view-refresh",QPixmap(":/icons/view-refresh.png")));
-    this->setFixedSize(700,500);
+#include <trans/trans.hh>
 
-    this->setCentralWidget(tabs);
-}
-
-MainWindow::~MainWindow() {
-    delete tabs;
+QString t(std::string str) {
+	return QString::fromStdString(trans(str));
 }

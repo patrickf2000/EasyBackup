@@ -30,17 +30,18 @@
 #include "backup_page.hh"
 #include "settings.hh"
 #include "backup.hh"
+#include "lang.hh"
 
 BackupPage::BackupPage()
     : layout(new QVBoxLayout),
-      begin(new QPushButton("Begin Backup")),
+      begin(new QPushButton(t("Begin Backup"))),
       output(new QTextEdit)
 {
     this->setLayout(layout);
 
     output->setStyleSheet("background-color:black;color: white;");
     output->setReadOnly(true);
-    output->setText("Click \"Begin Backup\" to begin.\nOr, click the \"Configure\" tab to adjust settings.");
+    output->setText(t("backup_inst"));
 
     layout->addWidget(begin);
     layout->addWidget(output);
@@ -66,10 +67,10 @@ BackupPage::~BackupPage() {
 }
 
 void BackupPage::onBeginClicked() {
-    QString txt = "Backing up with the following configuration:\n";
-    txt+="Command: "+Settings::command()+"\n";
-    txt+="Arguments: "+Settings::args()+"\n";
-    txt+="Destination: "+Settings::dest()+"\n\n";
+    QString txt = t("console_summary");
+    txt+=t("command")+Settings::command()+"\n";
+    txt+=t("arguments")+Settings::args()+"\n";
+    txt+=t("dest")+Settings::dest()+"\n\n";
     output->setPlainText(txt);
 
     Backup::genScript();
@@ -86,7 +87,7 @@ void BackupPage::onOutputReady() {
 
 void BackupPage::onDone() {
     QString oldText = output->toPlainText();
-    oldText += "\nThe Backup has been completed!\n";
+    oldText += t("backup_done");
     output->setPlainText(oldText);
     output->verticalScrollBar()->setValue(output->verticalScrollBar()->maximum());
 }
