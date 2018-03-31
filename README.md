@@ -12,6 +12,6 @@ On Windows, we use robocopy. On Linux, Mac OS, and BSD, we use rsync. On Linux, 
 #### Translations
 This progam has internationalization support through my trans library. By default, it uses the user's locale. The translation is file is located in /usr/share/EasyBackup. You can specify the path to another translation file through the --trans command line option. You can specify the language through the --lang command line option. Or, you can set the $LANG variable. If you wish to see a list of supported languages, simply view the translations file.
 
-Internationalization support is still in its early stages. It will be improved over time.
+Internationalization support is still in its early stages. It will be improved over time. I am working on adding multiple languages. Obviously, I do not know all these languages, so I have been using Google Translate; therefore, you may find some errors.
 
 
