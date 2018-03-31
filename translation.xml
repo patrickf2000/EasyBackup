@@ -4,46 +4,39 @@
 	<codes>
 		<li name="English,en,en_US,en_US.utf8,en_US.UTF-8" id="en"/>
 		<li name="German,de,de_DE,de_DE.utf8,de_DE.UTF-8" id="de"/>
-		<li name="debug" id="db"/>
 	</codes>
 	
 	<trans>
 		<phrase id="EasyBackup">
 			<en>EasyBackup</en>
 			<de>EinfacheSicherung</de>
-			<db>EasyBackup_db</db>
 		</phrase>
 		
 		<phrase id="Backup">
 			<en>Backup</en>
 			<de>Sicherung</de>
-			<db>Backup_db</db>
 		</phrase>
 		
 		<phrase id="Configure">
 			<en>Configure</en>
 			<de>Konfigurieren</de>
-			<db>Configure_db</db>
 		</phrase>
 		
 		<phrase id="Begin Backup">
 			<en>Begin Backup</en>
 			<de>Beginnen Sie mit der Sicherung</de>
-			<db>Begin_db_Backup</db>
 		</phrase>
 		
 		<!--Translators: translate according to pattern in English translation-->
 		<phrase id="backup_inst">
 			<en>Click "Begin Backup" to begin.&#10;Or, click the "Configure" tab to adjust settings.&#10;</en>
 			<de>Klicken Sie auf "Backup starten", um zu beginnen.&#10;Oder klicken Sie auf die Registerkarte "Konfigurieren", um die Einstellungen anzupassen.&#10;</de>
-			<db>Debug output!!&#10;</db>
 		</phrase>
 		
 		<!--Translators: translate according to pattern in English translation-->
 		<phrase id="console_summary">
 			<en>Backing up with the following configuration:&#10;</en>
 			<de>Sichern mit der folgenden Konfiguration:&#10;</de>
-			<db>Config: db_output1!&#10;</db>
 		</phrase>
 		
 		<!--Please maintain pattern with whitespace and punctuation-->
@@ -57,64 +50,54 @@
 		<phrase id="arguments">
 			<en>Arguments: </en>
 			<de>Argumente: </de>
-			<db>arguments_db: </db>
 		</phrase>
 		
 		<!--Please maintain pattern with whitespace and punctuation-->
 		<phrase id="dest">
 			<en>Destination: </en>
 			<de>Ziel: </de>
-			<db>dest_sb: </db>
 		</phrase>
 		
 		<!--Please maintain pattern with whitespace and punctuation-->
 		<phrase id="backup_done">
 			<en>The Backup has been completed!</en>
 			<de>Die Sicherung wurde abgeschlossen!</de>
-			<db>backup_done_db</db>
 		</phrase>
 		
 		<phrase id="Destination">
 			<en>Destination</en>
 			<de>Ziel</de>
-			<db>destination_db</db>
 		</phrase>
 		
 		<phrase id="Browse">
 			<en>Browse</en>
 			<de>Durchsuche</de>
-			<db>browse_db</db>
 		</phrase>
 		
 		<phrase id="Save Settings">
 			<en>Save Settings</en>
 			<de>Einstellungen speichern</de>
-			<db>save_settings_db</db>
 		</phrase>
 		
 		<phrase id="Choose Folder">
 			<en>Choose Folder</en>
 			<de>Wähle einen Ordner</de>
-			<db>choose_folder_db</db>
 		</phrase>
 		
 		<phrase id="Information">
 			<en>Information</en>
 			<de>Information</de>
-			<db>info_db</db>
 		</phrase>
 		
 		<!--Please maintain pattern with whitespace and punctuation-->
 		<phrase id="settings_saved">
 			<en>Your settings have been saved.</en>
 			<de>Deine Einstellungen wurden gespeichert.</de>
-			<db>settings_saved_db</db>
 		</phrase>
 		
 		<phrase id="Backup Done">
 			<en>Backup Done</en>
 			<de>Sicherung abgeschlossen</de>
-			<db>backup_done_db</db>
 		</phrase>
 	</trans>
 </translation>
