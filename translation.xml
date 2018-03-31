@@ -59,8 +59,8 @@
 		
 		<!--Please maintain pattern with whitespace and punctuation-->
 		<phrase id="backup_done">
-			<en>&#10;The Backup has been completed!&#10;</en>
-			<db>&#10;backup_done_db&#10;</db>
+			<en>The Backup has been completed!</en>
+			<db>backup_done_db</db>
 		</phrase>
 		
 		<phrase id="Destination">
@@ -92,6 +92,11 @@
 		<phrase id="settings_saved">
 			<en>Your settings have been saved.</en>
 			<db>settings_saved_db</db>
+		</phrase>
+		
+		<phrase id="Backup Done">
+			<en>Backup Done</en>
+			<db>backup_done_db</db>
 		</phrase>
 	</trans>
 </translation>

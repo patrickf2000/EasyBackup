@@ -88,7 +88,7 @@ void BackupPage::onOutputReady() {
 
 void BackupPage::onDone() {
     QString oldText = output->toPlainText();
-    oldText += t("backup_done");
+    oldText += "\n"+t("backup_done")+"\n";
     output->setPlainText(oldText);
     output->verticalScrollBar()->setValue(output->verticalScrollBar()->maximum());
 
