@@ -5,22 +5,20 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
 find_package(Qt5 REQUIRED COMPONENTS
-	Core
-	Widgets
+    Core
+    Widgets
 )
-
-find_library(trans REQUIRED)
 
 add_compile_options(-std=c++11)
 
 add_subdirectory(src)
 
 if (UNIX)
-	if (APPLE)
-	else()
-		install(FILES easy-backup.desktop DESTINATION /usr/share/applications)
-		install(FILES translation.xml DESTINATION /usr/share/EasyBackup)
-		install(CODE "execute_process(COMMAND update-desktop-database)")
-	endif()
+    if (APPLE)
+    else()
+        install(FILES easy-backup.desktop DESTINATION /usr/share/applications)
+        install(FILES translation.xml DESTINATION /usr/share/EasyBackup)
+        install(CODE "execute_process(COMMAND update-desktop-database)")
+    endif()
 endif()
 

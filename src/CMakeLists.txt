@@ -10,7 +10,6 @@ set(SRC
 	tabwidget.cxx
 	tinyxml2.cpp
 	window.cxx
-	lang.cxx
 	icons.qrc
 )
 
@@ -23,7 +22,6 @@ endif()
 target_link_libraries(EasyBackup
 	Qt5::Core
 	Qt5::Widgets
-	trans
 )
 
 if (UNIX)
